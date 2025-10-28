@@ -1,0 +1,940 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MSI × Porto Padua | Roadmap Estratégico</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+</head>
+<body>
+    <header class="hero">
+        <div class="hero-content">
+            <h1>🚀 MSI × Porto Padua</h1>
+            <p class="hero-subtitle">Parceria Estratégica em Segurança Eletrônica Condominial</p>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number">100+</span>
+                    <span class="stat-label">Condomínios Porto Padua</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">21</span>
+                    <span class="stat-label">Atendimentos/mês (atual)</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">R$ 190Bi</span>
+                    <span class="stat-label">Mercado BR (23,8% a.a.)</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav class="main-nav">
+        <button class="nav-btn active" data-section="situacao">📊 Situação Atual</button>
+        <button class="nav-btn" data-section="roadmap">🗺️ Roadmap</button>
+        <button class="nav-btn" data-section="comissao">💰 Comissão</button>
+        <button class="nav-btn" data-section="simulador">📈 Simulador</button>
+        <button class="nav-btn" data-section="fornecedor">⚠️ Fornecedor Atual</button>
+        <button class="nav-btn" data-section="proximos">✅ Próximos Passos</button>
+        <button class="nav-btn" data-section="bruno">❓ Bruno</button>
+    </nav>
+
+    <main class="container">
+        
+        <section id="situacao" class="section active">
+            <h2>📊 Situação Atual</h2>
+            
+            <div class="alert alert-info">
+                <strong>🎯 Momento:</strong> Validação inicial. Vitor (técnico MSI) + Fábio (sócio minoritário Porto Padua) + Bruno (intermediador) começando parceria para serviços de segurança eletrônica em condomínios.
+            </div>
+
+            <div class="grid-3">
+                <div class="card card-highlight">
+                    <h3>🏢 Porto Padua</h3>
+                    <ul class="list-clean">
+                        <li>100+ condomínios gerenciados</li>
+                        <li>Fábio: sócio minoritário</li>
+                        <li>Danilo: sócio majoritário</li>
+                        <li>~30 condos diretos do Fábio</li>
+                    </ul>
+                </div>
+
+                <div class="card card-highlight">
+                    <h3>🛠️ Técnicos Atuais (2)</h3>
+                    <ul class="list-clean">
+                        <li>👨‍💼 <strong>Técnico 1:</strong> Familiar do Danilo (11 condos preventiva, performance inconsistente)</li>
+                        <li>👨‍💼 <strong>Técnico 2:</strong> "Ponta firme" (faz tudo, ~10 atendimentos/mês, mas PP não tem margem)</li>
+                        <li>⚠️ Nenhum dá margem satisfatória para PP</li>
+                    </ul>
+                </div>
+
+                <div class="card card-highlight">
+                    <h3>🎯 Meta Inicial MSI</h3>
+                    <ul class="list-clean">
+                        <li>🎯 3-5 atendimentos/mês (mês 1)</li>
+                        <li>📈 8-12 atendimentos/mês (mês 6)</li>
+                        <li>💼 Vitor mantém CLT inicialmente</li>
+                        <li>🌙 Atende noites + fins de semana</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="comparison-box">
+                <h3>🔍 Baseline Real vs. Potencial MSI</h3>
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th>Métrica</th>
+                            <th>Técnico 1 (Familiar)<br><small>Preventiva</small></th>
+                            <th>Técnico 2 (Ponta Firme)<br><small>Pontuais</small></th>
+                            <th>MSI (Mês 1-3)</th>
+                            <th>MSI (Mês 4-6)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Tipo de Serviço</strong></td>
+                            <td>Manutenção preventiva recorrente</td>
+                            <td>Atendimentos pontuais (reparos, instalações)</td>
+                            <td>Pontuais + CFTV</td>
+                            <td>Pontuais + MRR</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Condomínios/mês</strong></td>
+                            <td>11 condos fixos</td>
+                            <td>10-12 atendimentos</td>
+                            <td class="highlight-cell">3-5 pontuais<br>+ 3-4 CFTV</td>
+                            <td class="highlight-cell">8-12 pontuais<br>+ recorrentes</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Ticket</strong></td>
+                            <td>R$ 200/mês/condo<br>(preventiva)</td>
+                            <td>R$ 800-1.200<br>(por atendimento)</td>
+                            <td>R$ 700-1.000 (pontuais)<br>R$ 5.000-15.000 (CFTV)</td>
+                            <td>R$ 900-1.200<br>+ R$ 300-500 MRR</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Receita mensal</strong></td>
+                            <td>R$ 2.200<br>(11 × R$ 200)</td>
+                            <td>R$ 8.000-14.400<br>(10-12 × R$ 800-1.200)</td>
+                            <td class="highlight-cell">R$ 2.100-5.000 (pontuais)<br>+ R$ 15-60K (CFTV meses 1-3)</td>
+                            <td class="highlight-cell">R$ 7.200-14.400 (pontuais)<br>+ R$ 2.400-6.000 (MRR)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Margem para PP</strong></td>
+                            <td>⚠️ 0% (familiar)</td>
+                            <td>⚠️ 0% (não negocia)</td>
+                            <td class="highlight-cell">✅ 12%</td>
+                            <td class="highlight-cell">✅ 12%</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Performance</strong></td>
+                            <td>⚠️ Inconsistente (outra empresa)</td>
+                            <td>✅ Confiável ("ponta firme")</td>
+                            <td>⭐ 4,5+/5 (meta)</td>
+                            <td>⭐ 4,8+/5 (meta)</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="alert alert-info" style="margin-top: 20px;">
+                    <strong>📊 Total Técnicos Atuais:</strong> R$ 10.200-16.600/mês (preventiva + pontuais) | Margem PP: R$ 0<br><br>
+                    <strong>🎯 Potencial MSI (Mês 4-6):</strong> R$ 9.600-20.400/mês | Margem PP: R$ 1.152-2.448/mês (12%)
+                </div>
+            </div>
+
+            <div class="alert alert-success">
+                <strong>💡 Oportunidade Imediata:</strong> Fábio tem 3-4 orçamentos de instalação CFTV completa PRÉ-APROVADOS por condomínios Porto Padua, aguardando para MSI executar. Potencial de R$ 15-60K em receita nos primeiros 2-3 meses.
+            </div>
+
+            <div class="alert alert-success">
+                <strong>💡 Oportunidade de Longo Prazo:</strong> Substituir gradualmente técnicos atuais (nenhum gera margem satisfatória para PP) + capturar 100% dos novos atendimentos. Potencial de 40-50 atendimentos/mês em 12 meses.
+            </div>
+            <div class="alert alert-warning">
+                <strong>💰 Importante - Custos de Materiais:</strong> Nos orçamentos, materiais devem ter markup de 15-25% sobre custo de aquisição (padrão do setor). Exemplos: câmera custando R$ 300 → cobrar R$ 345-375 | cabos/conectores custando R$ 150 → cobrar R$ 172-187. Este markup cobre logística, garantia de produto e risco de defeito. O valor da comissão de 12% é calculado sobre o valor total faturado (materiais + mão de obra), não apenas sobre mão de obra.
+            </div>
+        </section>
+
+        <section id="roadmap" class="section">
+            <h2>🗺️ Roadmap de Crescimento</h2>
+
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-badge phase-1">1</div>
+                    <div class="timeline-content">
+                        <h3>Fase 1: Condomínios do Fábio</h3>
+                        <p class="timeline-period">Meses 1-6 | Validação</p>
+                        <div class="grid-2">
+                            <div>
+                                <h4>🎯 Objetivos</h4>
+                                <ul>
+                                    <li>Começar com 30 condos diretos do Fábio</li>
+                                    <li>Validar qualidade de serviço</li>
+                                    <li>Construir track record</li>
+                                    <li>Testar modelo de comissão</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4>📊 Metas</h4>
+                                <ul>
+                                    <li><strong>Mês 1-3:</strong> 3-5 atendimentos/mês</li>
+                                    <li><strong>Mês 4-6:</strong> 8-12 atendimentos/mês</li>
+                                    <li><strong>Satisfação:</strong> ≥4,5/5</li>
+                                    <li><strong>Retenção:</strong> 100% (nenhuma reclamação)</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="alert alert-info">
+                            <strong>✅ Portão de Decisão (Mês 6):</strong> Se satisfação ≥4,5/5, receita ≥R$ 7K/mês e ambos felizes → avançar para Fase 2
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-badge phase-2">2</div>
+                    <div class="timeline-content">
+                        <h3>Fase 2: Outros Gerentes Porto Padua</h3>
+                        <p class="timeline-period">Meses 7-12 | Expansão Interna</p>
+                        <div class="grid-2">
+                            <div>
+                                <h4>🎯 Objetivos</h4>
+                                <ul>
+                                    <li>Expandir para 70+ condos (outros gerentes PP)</li>
+                                    <li>Fábio recebe comissão sobre TODOS condos PP</li>
+                                    <li>MSI vira fornecedor preferencial PP</li>
+                                    <li>Escalar operação (potencial contratar)</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4>📊 Metas</h4>
+                                <ul>
+                                    <li><strong>Atendimentos:</strong> 15-25/mês</li>
+                                    <li><strong>Receita MSI:</strong> R$ 12-20K/mês</li>
+                                    <li><strong>Comissão Fábio:</strong> R$ 1.500-2.500/mês</li>
+                                    <li><strong>Penetração PP:</strong> 20-30% dos condos</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="alert alert-warning">
+                            <strong>⚠️ Portão de Decisão (Mês 12):</strong> Avaliar se Fábio quer papel comercial formal (20-25% comissão + bônus) ou manter comissão simples (12%)
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-badge phase-3">3</div>
+                    <div class="timeline-content">
+                        <h3>Fase 3: Mercado Aberto</h3>
+                        <p class="timeline-period">Mês 12+ | Independência</p>
+                        <div class="grid-2">
+                            <div>
+                                <h4>🎯 Objetivos</h4>
+                                <ul>
+                                    <li>MSI busca clientes além da Porto Padua</li>
+                                    <li>Vitor sai do CLT (se viável)</li>
+                                    <li>Fábio mantém comissão sobre condos PP</li>
+                                    <li>Discussão de equity SÓ se métricas atingidas</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4>📊 Metas</h4>
+                                <ul>
+                                    <li><strong>Receita MSI:</strong> R$ 20-40K/mês</li>
+                                    <li><strong>Porto Padua:</strong> 30-50% da receita</li>
+                                    <li><strong>Outros clientes:</strong> 50-70%</li>
+                                    <li><strong>Equipe:</strong> Vitor + 1-2 técnicos</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="alert alert-success">
+                            <strong>🎯 Opções Futuras:</strong> (1) Manter parceria com comissão, (2) Fábio vira "Diretor Comercial" MSI, (3) Discutir equity (20-30% Fábio com vesting) SE receita >R$ 30K/mês consistente por 6+ meses
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            </section>
+
+        <section id="comissao" class="section">
+            <h2>💰 Modelo de Comissão</h2>
+
+            <div class="alert alert-info">
+                <strong>🎯 Princípio:</strong> Fábio recebe comissão APENAS sobre condomínios que ele indica/gerencia. MSI mantém 100% dos clientes que consegue por conta própria.
+            </div>
+
+            <div class="commission-structure">
+                <h3>Estrutura Recomendada</h3>
+                <div class="grid-2">
+                    <div class="card card-success">
+                        <h4>✅ Fase 1: Condomínios do Fábio</h4>
+                        <div class="commission-detail">
+                            <span class="commission-rate">12%</span>
+                            <span class="commission-label">sobre valor bruto do serviço</span>
+                        </div>
+                        <p><strong>Exemplo:</strong></p>
+                        <ul class="list-clean">
+                            <li>Serviço: R$ 1.000</li>
+                            <li>Comissão Fábio: R$ 120</li>
+                            <li>Receita MSI: R$ 880</li>
+                        </ul>
+                        <p class="small-text">✓ Pagamento quando MSI receber do cliente</p>
+                    </div>
+
+                    <div class="card card-success">
+                        <h4>✅ Fase 2: Outros Gerentes PP</h4>
+                        <div class="commission-detail">
+                            <span class="commission-rate">12%</span>
+                            <span class="commission-label">sobre TODOS condos Porto Padua</span>
+                        </div>
+                        <p><strong>Exemplo:</strong></p>
+                        <ul class="list-clean">
+                            <li>20 atendimentos/mês × R$ 1.000 = R$ 20.000</li>
+                            <li>Comissão Fábio: R$ 2.400/mês</li>
+                            <li>Receita MSI: R$ 17.600/mês</li>
+                        </ul>
+                        <p class="small-text">✓ Fábio recebe mesmo sem participar diretamente</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="commission-rules">
+                <h3>룰 Regras Operacionais</h3>
+                <div class="grid-3">
+                    <div class="rule-card">
+                        <h4>🎯 Base de Cálculo</h4>
+                        <p>Valor total faturado ao cliente (materiais + mão de obra)</p>
+                    </div>
+                    <div class="rule-card">
+                        <h4>🕙 Pagamento</h4>
+                        <p>Até 5 dias úteis após MSI receber do cliente</p>
+                    </div>
+                    <div class="rule-card">
+                        <h4>📊 Rastreamento</h4>
+                        <p>Planilha compartilhada atualizada semanalmente</p>
+                    </div>
+                    <div class="rule-card">
+                        <h4>✅ Elegíveis</h4>
+                        <p>Apenas condomínios Porto Padua (Fábio + outros gerentes)</p>
+                    </div>
+                    <div class="rule-card">
+                        <h4>❌ Exclusões</h4>
+                        <p>Retrabalho, garantia, serviços gratuitos</p>
+                    </div>
+                    <div class="rule-card">
+                        <h4>🔄 Revisão</h4>
+                        <p>Modelo revisado a cada 6 meses</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="alert alert-warning">
+                <strong>⚠️ Importante:</strong> Modelo de comissão pode evoluir para estrutura híbrida (equity + comissão reduzida) apenas SE receita MSI >R$ 30K/mês consistente E ambos quiserem parceria de longo prazo.
+            </div>
+
+            <div class="commission-evolution">
+                <h3>🔄 Possível Evolução (Mês 12+)</h3>
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th>Opção</th>
+                            <th>Estrutura</th>
+                            <th>Quando Considerar</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Status Quo</strong></td>
+                            <td>12% comissão permanente</td>
+                            <td>Se Fábio não quer se envolver mais operacionalmente</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Diretor Comercial</strong></td>
+                            <td>20-25% comissão + bônus performance</td>
+                            <td>Se Fábio dedica tempo significativo a vendas MSI</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Equity Minoritário</strong></td>
+                            <td>20-30% equity + 5-8% comissão</td>
+                            <td>Se receita >R$ 30K/mês por 6+ meses E ambos querem sociedade</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section id="bruno" class="section">
+            <h2>❓ Bruno</h2>
+
+            <div class="bruno-value">
+                <h3>🚀 Como Bruno Agrega Valor</h3>
+                <div class="grid-3">
+                    <div class="value-card">
+                        <div class="value-icon">🌐</div>
+                        <h4>Digital & Presença Online</h4>
+                        <ul>
+                            <li>Website profissional MSI (landing page)</li>
+                            <li>Presença digital básica (Google Meu Negócio)</li>
+                            <li>CRM simples para rastrear atendimentos</li>
+                            <li>Planilhas inteligentes e dashboards visuais</li>
+                            <li>Materiais comerciais (propostas, apresentações)</li>
+                        </ul>
+                        <p class="value-note"><strong>Gap:</strong> MSI e Porto Padua não têm website. Vitor precisa de presença digital para profissionalizar. Bruno pode criar isso do zero rapidamente.</p>
+                    </div>
+
+                    <div class="value-card">
+                        <div class="value-icon">🤝</div>
+                        <h4>Negociação & Parcerias</h4>
+                        <ul>
+                            <li>Estruturação de acordos B2B limpos</li>
+                            <li>Negociação com condomínios grandes</li>
+                            <li>Desenvolvimento de propostas comerciais</li>
+                            <li>Gestão de stakeholders complexos</li>
+                            <li>Experiência em scaling de parcerias</li>
+                        </ul>
+                        <p class="value-note"><strong>Gap:</strong> MSI precisa profissionalizar approach comercial para crescer além de indicações. Bruno tem track record em escalar vendas B2B.</p>
+                    </div>
+
+                    <div class="value-card">
+                        <div class="value-icon">⚙️</div>
+                        <h4>Operações & Processos</h4>
+                        <ul>
+                            <li>Desenho de processos escaláveis</li>
+                            <li>Sales operations e pipeline management</li>
+                            <li>KPIs e tracking de performance</li>
+                            <li>Onboarding de clientes estruturado</li>
+                            <li>Documentação e knowledge base</li>
+                        </ul>
+                        <p class="value-note"><strong>Gap:</strong> Parceria precisa de processos claros desde o início. Bruno evita "crescer desordenadamente" - problema comum em startups de serviço.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bruno-vision">
+                <h3>🎯 Visão: Partnership as a Service</h3>
+                <div class="alert alert-success">
+                    <strong>💡 Conceito:</strong> Bruno está desenvolvendo um modelo de "Partnership as a Service" - intermediação profissional de parcerias estratéticas. MSI × Porto Padua é o case piloto desta abordagem.
+                </div>
+                <div class="grid-2">
+                    <div class="vision-card">
+                        <h4>🎯 Por que MSI é o Case Ideal?</h4>
+                        <ul>
+                            <li>Ambos são amigos do Bruno (confiança pré-existente)</li>
+                            <li>Complementaridade clara: Vitor (técnico) + Fábio (acesso a mercado)</li>
+                            <li>Oportunidade de mercado robusta (R$ 190Bi, 23,8% a.a.)</li>
+                            <li>Risco controlado (validação progressiva, sem joint venture)</li>
+                            <li>Potencial de documentar aprendizados e replicar modelo</li>
+                        </ul>
+                    </div>
+                    <div class="vision-card">
+                        <h4>🎯 Objetivos do Bruno</h4>
+                        <ul>
+                            <li><strong>Curto prazo:</strong> Garantir sucesso da parceria MSI × PP</li>
+                            <li><strong>Médio prazo:</strong> Documentar processos e frameworks replicáveis</li>
+                            <li><strong>Longo prazo:</strong> Validar modelo "Partnership as a Service" e escalar para outras duplas</li>
+                            <li><strong>Win-win:</strong> Amigos crescem + Bruno valida novo serviço</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bruno-principles">
+                <h3>📋 Princípios de Intermediação do Bruno</h3>
+                <div class="grid-2">
+                    <div class="principle-card">
+                        <h4>✅ O que Bruno FAZ</h4>
+                        <ul>
+                            <li>Facilita comunicação objetiva</li>
+                            <li>Propõe frameworks e estruturas</li>
+                            <li>Analisa dados e cenários financeiros</li>
+                            <li>Alerta sobre riscos e red flags</li>
+                            <li>Sugere ferramentas e processos</li>
+                            <li>Documenta aprendizados</li>
+                        </ul>
+                    </div>
+                    <div class="principle-card">
+                        <h4>❌ O que Bruno NÃO FAZ</h4>
+                        <ul>
+                            <li>Decide por Fábio ou Vitor (decisão é deles)</li>
+                            <li>Toma partido em conflitos (neutro sempre)</li>
+                            <li>Garante resultados (parceria depende de execução)</li>
+                            <li>Pressiona por velocidade (validação > pressa)</li>
+                            <li>Aceita equity prematuramente (meritocrático)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="simulador" class="section">
+            <h2>📈 Simulador Financeiro</h2>
+
+            <div class="calculator-box">
+                <h3>🧮 Calculadora de Cenários</h3>
+                <div class="grid-2">
+                    <div class="input-section">
+                        <h4>Inputs</h4>
+                        
+                        <div class="input-group">
+                            <label>Atendimentos por Mês:</label>
+                            <input type="number" id="numAtendimentos" value="10" min="1" max="50">
+                        </div>
+
+                        <div class="input-group">
+                            <label>Ticket Médio (R$):</label>
+                            <input type="number" id="ticketMedio" value="1000" min="100" max="5000" step="50">
+                        </div>
+
+                        <div class="input-group">
+                            <label>Margem Bruta (%):</label>
+                            <input type="number" id="margemBruta" value="65" min="20" max="80" step="5">
+                        </div>
+
+                        <div class="input-group">
+                            <label>Comissão Fábio (%):</label>
+                            <input type="number" id="comissaoFabio" value="12" min="0" max="25" step="1">
+                        </div>
+
+                        <div class="input-group">
+                            <label>Custos Fixos (R$):</label>
+                            <input type="number" id="custosFixos" value="1500" min="0" max="10000" step="100">
+                        </div>
+
+
+                        <button onclick="calcularCenarios()" class="btn-primary">Calcular Cenários</button>
+                    </div>
+
+                    <div class="output-section">
+                        <h4>Resultados</h4>
+                        <div id="resultados" class="resultados-grid">
+                            </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="charts-container">
+                <div class="chart-box">
+                    <h4>📊 Distribuição de Receita</h4>
+                    <canvas id="receitaChart"></canvas>
+                </div>
+
+                <div class="chart-box">
+                    <h4>📈 Evolução Projetada (12 meses)</h4>
+                    <canvas id="projecaoChart"></canvas>
+                </div>
+            </div>
+
+            <div class="scenarios-comparison">
+                <h3>🎯 Comparação de Cenários</h3>
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th>Cenário</th>
+                            <th>Atend/mês</th>
+                            <th>Receita Bruta</th>
+                            <th>Comissão Fábio</th>
+                            <th>Lucro MSI</th>
+                            <th>ROI Vitor</th>
+                        </tr>
+                    </thead>
+                    <tbody id="scenariosTable">
+                        </tbody>
+                </table>
+            </div>
+
+            <div class="alert alert-warning">
+                <strong>⚠️ Premissas Importantes:</strong>
+                <ul>
+                    <li>Ticket médio pode variar 40-60% (R$ 600-1.800) dependendo do serviço</li>
+                    <li>Margem bruta esperada: 60-70% (após custos de materiais e deslocamento)</li>
+                    <li>Vitor CLT: disponível 20-25h/semana (noites + fins de semana) = 8-12 atendimentos/mês realista</li>
+                    <li>Para >15 atendimentos/mês, Vitor precisa sair do CLT ou contratar ajudante</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="fornecedor" class="section">
+            <h2>⚠️ Gestão dos Fornecedores Atuais</h2>
+
+            <div class="alert alert-warning">
+                <strong>🎯 Situação:</strong> Porto Padua usa atualmente 2 técnicos para atender seus 100+ condomínios. Nenhum dos dois fornece margem satisfatória (comissão) para PP, o que torna a entrada da MSI atrativa.
+            </div>
+
+            <div class="fornecedor-situation">
+                <div class="grid-2">
+                    <div class="card">
+                        <h3>👨‍💼 Técnico 1: Familiar do Danilo</h3>
+                        <ul class="list-clean">
+                            <li><strong>Relação:</strong> Familiar do Danilo (padrinho/sócio majoritário)</li>
+                            <li><strong>Atuação:</strong> Manutenção preventiva APENAS</li>
+                            <li><strong>Condomínios:</strong> 11 fixos com contrato mensal</li>
+                            <li><strong>Receita:</strong> R$ 200/mês/condo = R$ 2.200/mês total</li>
+                            <li><strong>Dedicação:</strong> Parcial (tem outros negócios, não focado)</li>
+                            <li><strong>Performance:</strong> ⚠️ Inconsistente</li>
+                            <li><strong>Margem PP:</strong> R$ 0 (relação familiar, não negocia)</li>
+                            <li><strong>Satisfação estimada:</strong> 3-4/5</li>
+                        </ul>
+                    </div>
+
+                    <div class="card">
+                        <h3>👨‍💼 Técnico 2: "Ponta Firme"</h3>
+                        <ul class="list-clean">
+                            <li><strong>Relação:</strong> Terceirizado sem vínculo pessoal com PP</li>
+                            <li><strong>Atuação:</strong> Atendimentos pontuais (reparos, instalações)</li>
+                            <li><strong>Volume:</strong> 10-12 atendimentos/mês (varia)</li>
+                            <li><strong>Receita:</strong> Ticket R$ 800-1.200 = R$ 8.000-14.400/mês</li>
+                            <li><strong>Histórico:</strong> Começou com câmeras, hoje faz de tudo</li>
+                            <li><strong>Performance:</strong> ✅ Muito boa ("ponta firme", confiável)</li>
+                            <li><strong>Problema:</strong> ⚠️ NÃO permite Porto Padua negociar margem</li>
+                            <li><strong>Margem PP:</strong> R$ 0 (não aceita intermediação)</li>
+                            <li><strong>Satisfação estimada:</strong> 4-4,5/5</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="alert alert-warning" style="margin-top: 20px;">
+                <strong>💰 Problema Central:</strong> Porto Padua movimenta R$ 10.200-16.600/mês em serviços de manutenção, mas margem = R$ 0. Nenhum dos 2 técnicos permite ganho de intermediação.
+            </div>
+
+            <div class="alert alert-success">
+                <strong>💡 Oportunidade MSI:</strong> Oferecer qualidade igual/superior + 12% de comissão = win claro para Porto Padua. Potencial de R$ 1.152-2.448/mês em margem (12% sobre R$ 9.600-20.400).
+            </div>
+
+            <div class="coexistence-strategy">
+                <h3>🤝 Estratégia de Coexistência (Fases)</h3>
+                
+                <div class="phase-box">
+                    <h4>Fase 1 (Meses 1-6): Entrada Complementar</h4>
+                    <ul>
+                        <li>✓ MSI foca em <strong>instalações novas</strong> (ex: 3-4 orçamentos CFTV pré-aprovados)</li>
+                        <li>✓ Evitar conflito direto com Técnico 1 (familiar) nas preventivas dele</li>
+                        <li>✓ Não competir agressivamente com Técnico 2 ("ponta firme")</li>
+                        <li>✓ Posicionamento: "MSI é opção adicional de qualidade que GERA MARGEM para PP"</li>
+                        <li>✓ Foco: construir reputação via qualidade superior + comissão 12%</li>
+                    </ul>
+                    <p class="phase-note"><strong>Messaging para Danilo:</strong> "MSI resolve um problema que vocês têm: nenhum técnico atual deixa Porto Padua ganhar margem. Com MSI vocês ganham 12% e mantêm qualidade alta."</p>
+                </div>
+
+                <div class="phase-box">
+                    <h4>Fase 2 (Meses 7-12): Expansão por Demanda Natural</h4>
+                    <ul>
+                        <li>✓ Se Técnico 1 (familiar) continuar inconsistente, condomínios PEDEM alternativa</li>
+                        <li>✓ Se Técnico 2 ("ponta firme") estiver sobrecarregado, MSI absorve excedente</li>
+                        <li>✓ Porto Padua pode oferecer MSI como "segunda opção" sem forçar nada</li>
+                        <li>✓ Dual sourcing natural: clientes escolhem entre Técnico 2 vs. MSI</li>
+                        <li>✓ Diferencial MSI: 12% comissão + disponibilidade garantida</li>
+                    </ul>
+                    <p class="phase-note"><strong>Posicionamento:</strong> "Ter 2-3 fornecedores bons reduz risco de indisponibilidade. MSI é o único que oferece comissão."</p>
+                </div>
+
+                <div class="phase-box">
+                    <h4>Fase 3 (Mês 12+): Consolidação Orgânica</h4>
+                    <ul>
+                        <li>✓ Se Técnico 1 sair (por vontade própria ou performance ruim), MSI assume contratos</li>
+                        <li>✓ Se Técnico 2 continuar sem dar margem, Porto Padua naturalmente prioriza MSI</li>
+                        <li>✓ MSI pode virar fornecedor preferencial (não exclusivo)</li>
+                        <li>✓ Danilo reconhece valor: qualidade + disponibilidade + comissão</li>
+                    </ul>
+                    <p class="phase-note"><strong>Nota:</strong> Substituição completa NÃO é objetivo inicial. Pode ou não acontecer naturalmente conforme MSI prova valor.</p>
+                </div>
+            </div>
+
+            <div class="political-management">
+                <h3>🎯 Gestão Política: Protegendo Fábio</h3>
+                <div class="grid-2">
+                    <div class="card">
+                        <h4>✅ O que Fábio DEVE fazer</h4>
+                        <ul>
+                            <li>✓ Comunicar Danilo ANTES de trazer MSI formalmente</li>
+                            <li>✓ Enquadrar como "opção que GERA MARGEM" (diferente dos 2 atuais)</li>
+                            <li>✓ Enfatizar que técnicos atuais continuam (MSI é adicional)</li>
+                            <li>✓ Começar com instalações novas (3-4 CFTV pré-aprovados)</li>
+                            <li>✓ Documentar TUDO (e-mails, decisões, aprovações)</li>
+                            <li>✓ Rastrear satisfação de TODOS os fornecedores</li>
+                            <li>✓ Deixar QUALIDADE + MARGEM decidirem (dados, não preferência)</li>
+                        </ul>
+                    </div>
+
+                    <div class="card">
+                        <h4>❌ O que Fábio NÃO DEVE fazer</h4>
+                        <ul>
+                            <li>✗ Criticar Técnico 1 (familiar) publicamente</li>
+                            <li>✗ Dizer que Técnico 2 ("ponta firme") é problema</li>
+                            <li>✗ Forçar substituição de ninguém prematuramente</li>
+                            <li>✗ Tomar decisão unilateral (sem Danilo)</li>
+                            <li>✗ Criar competição hostil entre fornecedores</li>
+                            <li>✗ Prometer a MSI que vai "tirar" os outros</li>
+                            <li>✗ Envolver família/emoções em discussões de negócio</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="alert alert-success">
+                <strong>💡 Argumento de Ouro para Danilo:</strong> "Nenhum dos 2 técnicos atuais permite Porto Padua ganhar margem. MSI oferece a mesma (ou melhor) qualidade + 12% de comissão para nós. É adicional, não substitui ninguém. Vamos testar com as 3-4 instalações CFTV que já estão pré-aprovadas."
+            </div>
+
+            <div class="alert alert-danger">
+                <strong>🚨 Red Flags - Quando NÃO avançar:</strong>
+                <ul>
+                    <li>Danilo se opõe categoricamente (mesmo após explicação racional sobre margem)</li>
+                    <li>Técnico 1 (familiar) se sente ameaçado e cria conflito familiar intenso</li>
+                    <li>MSI não entrega qualidade superior nos primeiros jobs (expectativas não atingidas)</li>
+                    <li>Conflitos familiares intensos (política > negócio)</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="proximos" class="section">
+            <h2>✅ Próximos Passos</h2>
+
+            <div class="alert alert-success">
+                <strong>🎯 Objetivo:</strong> Executar o primeiro atendimento em 2-3 semanas. Tudo abaixo deve estar completo antes disso.
+            </div>
+
+            <div class="checklist-container">
+                <h3>📋 Semana 1: Fundação</h3>
+                <div class="checklist-section">
+                    <h4>Vitor (MSI)</h4>
+                    <div class="checklist">
+                        <label>
+                            <input type="checkbox" id="check1">
+                            <span>Abrir CNPJ (MEI) - prioridade #1</span>
+                        </label>
+                        <label>
+                            <input type="checkbox" id="check2">
+                            <span>Criar tabela de preços para 5 serviços core</span>
+                        </label>
+                        <label>
+                            <input type="checkbox" id="check3">
+                            <span>Verificar cláusula de não-concorrência no contrato CLT</span>
+                        </label>
+                        <label>
+                            <input type="checkbox" id="check4">
+                            <span>Preparar proposta comercial padrão (1 página)</span>
+                        </label>
+                        <label>
+                            <input type="checkbox" id="check5">
+                            <span>Pesquisar seguros necessários (RC profissional)</span>
+                        </label>
+                    </div>
+
+                    <h4>Fábio (Porto Padua)</h4>
+                    <div class="checklist">
+                        <label>
+                            <input type="checkbox" id="check6">
+                            <span>Comunicar Danilo sobre "teste de fornecedor backup"</span>
+                        </label>
+                        <label>
+                            <input type="checkbox" id="check7">
+                            <span>Mapear condomínios/serviços potenciais para primeiros atendimentos</span>
+                        </label>
+                        <label>
+                            <input type="checkbox" id="check8">
+                            <span>Confirmar detalhes sobre os outros fonecedores desse tipo de serviço</span>
+                        </label>
+                        <label>
+                            <input type="checkbox" id="check9">
+                            <span>Decidir: receber comissão como PF ou via Porto Padua?</span>
+                        </label>
+                    </div>
+
+                    <h4>Bruno (Intermediador)</h4>
+                    <div class="checklist">
+                        <label>
+                            <input type="checkbox" id="check10">
+                            <span>Criar planilha de rastreamento compartilhada (Google Sheets)</span>
+                        </label>
+                        <label>
+                            <input type="checkbox" id="check11">
+                            <span>Configurar dashboard de KPIs (Power BI)</span>
+                        </label>
+                        <label>
+                            <input type="checkbox" id="check12">
+                            <span>Preparar MOU com Acordo de Comissão</span>
+                        </label>
+                    </div>
+                </div>
+
+                <h3>📋 Semana 2: Formalização</h3>
+                <div class="checklist-section">
+                    <h4>Todos</h4>
+                    <div class="checklist">
+                        <label>
+                            <input type="checkbox" id="check13">
+                            <span>Reunião de alinhamento para revisar este documento juntos</span>
+                        </label>
+                        <label>
+                            <input type="checkbox" id="check14">
+                            <span>Assinar MOU não-vinculante (6 meses, sem joint venture)</span>
+                        </label>
+                        <label>
+                            <input type="checkbox" id="check15">
+                            <span>Assinar Acordo de Comissão (x% sobre condos PP)</span>
+                        </label>
+                        <label>
+                            <input type="checkbox" id="check16">
+                            <span>Definir processo de feedback de clientes</span>
+                        </label>
+                        <label>
+                            <input type="checkbox" id="check17">
+                            <span>Agendar reunião quinzenal de acompanhamento</span>
+                        </label>
+                    </div>
+                </div>
+
+                <h3>📋 Semana 3: Primeiro Atendimento</h3>
+                <div class="checklist-section">
+                    <h4>Execução</h4>
+                    <div class="checklist">
+                        <label>
+                            <input type="checkbox" id="check18">
+                            <span>Fábio indica 1º condomínio (serviço simples para validação)</span>
+                        </label>
+                        <label>
+                            <input type="checkbox" id="check19">
+                            <span>Vitor prepara orçamento detalhado e envia para Fábio</span>
+                        </label>
+                        <label>
+                            <input type="checkbox" id="check20">
+                            <span>Fábio envia orçamento MSI ao condomínio (PP como intermediário)</span>
+                        </label>
+                        <label>
+                            <input type="checkbox" id="check21">
+                            <span>Cliente aprova → Vitor agenda e executa serviço</span>
+                        </label>
+                        <label>
+                            <input type="checkbox" id="check22">
+                            <span>🚀 Executar + coletar feedback do cliente</span>
+                        </label>
+                        <label>
+                            <input type="checkbox" id="check23">
+                            <span>Registrar TUDO na planilha compartilhada (tempo, custos, satisfação)</span>
+                        </label>
+                    </div>
+
+                    <h4>Oportunidade Imediata: Instalações CFTV</h4>
+                    <div class="alert alert-success" style="margin-top: 15px;">
+                        <strong>💰 Quick Win:</strong> Fábio tem 3-4 orçamentos de instalação CFTV completa PRÉ-APROVADOS Estes podem ser os primeiros jobs da MSI (ticket alto: R$ 5-15K cada). Timing ideal: executar nos meses 1-3 para validar capacidade de instalação + gerar receita inicial robusta.
+                    </div>
+                    <div class="checklist">
+                        <label>
+                            <input type="checkbox" id="check24">
+                            <span>Fábio compartilha detalhes dos 3-4 orçamentos CFTV pré-aprovados com Vitor</span>
+                        </label>
+                        <label>
+                            <input type="checkbox" id="check25">
+                            <span>Vitor valida capacidade técnica e prepara orçamentos detalhados MSI</span>
+                        </label>
+                        <label>
+                            <input type="checkbox" id="check26">
+                            <span>Fábio envia orçamentos MSI aos condomínios (PP como intermediário)</span>
+                        </label>
+                        <label>
+                            <input type="checkbox" id="check27">
+                            <span>Priorizar 1-2 instalações CFTV nos primeiros 2 meses</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gates-timeline">
+                <h3>🏁 Portões de Decisão</h3>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-badge">MÊS 3</div>
+                        <div class="timeline-content">
+                            <h4>Portão 1: Viabilidade Básica</h4>
+                            <p><strong>Perguntas:</strong></p>
+                            <ul>
+                                <li>✓ Conseguem entregar serviço de qualidade juntos?</li>
+                                <li>✓ Trabalham bem juntos?</li>
+                                <li>✓ Clientes querem isto?</li>
+                                <li>✓ Pricing é viável? (margem >20%)</li>
+                            </ul>
+                            <p><strong>Resultados:</strong> CONTINUAR / PIVOTAR / PARAR</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-badge">MÊS 6</div>
+                        <div class="timeline-content">
+                            <h4>Portão 2: Validação Financeira</h4>
+                            <p><strong>Critérios:</strong></p>
+                            <ul>
+                                <li>✓ Receita MSI ≥R$ 7.000/mês</li>
+                                <li>✓ Satisfação cliente ≥4,5/5</li>
+                                <li>✓ Margem bruta ≥25%</li>
+                                <li>✓ Ambos parceiros felizes (>7/10)</li>
+                            </ul>
+                            <p><strong>Se SIM:</strong> Avançar para Fase 2 (outros gerentes PP)</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-badge">MÊS 12</div>
+                        <div class="timeline-content">
+                            <h4>Portão 3: Discussão de Formalização</h4>
+                            <p><strong>Critérios para discutir equity:</strong></p>
+                            <ul>
+                                <li>✓ Receita MSI >R$ 30.000/mês por 3+ meses</li>
+                                <li>✓ Margem bruta >25%</li>
+                                <li>✓ 30+ clientes ativos</li>
+                                <li>✓ Ambos querem sociedade de longo prazo</li>
+                            </ul>
+                            <p><strong>Opções:</strong> Manter comissão / Diretor Comercial / Equity</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="avoid-traps">
+                <h3>🚫 Armadilhas a Evitar</h3>
+                <div class="grid-2">
+                    <div class="card card-danger">
+                        <h4>❌ NÃO fazer agora</h4>
+                        <ul>
+                            <li>✗ Joint venture ou sociedade formal</li>
+                            <li>✗ Dar equity antes de validar operacionalmente</li>
+                            <li>✗ Comprometer exclusividade (Vitor pode ter outros clientes)</li>
+                            <li>✗ Formalizar parceria com Danilo sem track record</li>
+                            <li>✗ Vitor sair do CLT antes de receita sustentável</li>
+                            <li>✗ Substituir fornecedor familiar prematuramente</li>
+                        </ul>
+                    </div>
+
+                    <div class="card card-success">
+                        <h4>✅ FAZER agora</h4>
+                        <ul>
+                            <li>✓ MOU não-vinculante (6 meses, saída fácil)</li>
+                            <li>✓ Acordo de comissão simples (12%)</li>
+                            <li>✓ Começar com 3-5 atendimentos/mês</li>
+                            <li>✓ Rastrear TUDO em planilha compartilhada</li>
+                            <li>✓ Vitor mantém CLT + trabalha noites/fins de semana</li>
+                            <li>✓ Posicionar MSI como "complementar" ao fornecedor atual</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="final-reminder">
+                <div class="alert alert-info">
+                    <strong>🎯 Princípio Fundamental:</strong> <span class="highlight">Validar → Escalar → Formalizar</span>. Nesta ordem. Sempre.
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p><strong>Parceria MSI × Porto Padua</strong> | Intermediado por Bruno Figueiredo</p>
+            <p>Documento versão 2.0 | Criado em Outubro 2025</p>
+            <p><em>"Validar primeiro, estruturar depois. 92% das parcerias que falham o fazem por formalização prematura."</em></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
