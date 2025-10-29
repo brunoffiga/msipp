@@ -116,7 +116,6 @@ body {
     padding: 20px;
     background: white;
     box-shadow: var(--shadow-md);
-    position: sticky;
     top: 0;
     z-index: 100;
     flex-wrap: wrap;
@@ -866,4 +865,5 @@ tr:last-child td {
         box-shadow: none;
         border: 1px solid var(--gray-300);
     }
+
 }
